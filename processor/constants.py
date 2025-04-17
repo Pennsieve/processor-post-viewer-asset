@@ -1,0 +1,1 @@
+VIEWER_ASSET_CONFIG_FILE='pennsieve_viewer_config.yaml'
