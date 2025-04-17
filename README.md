@@ -1,2 +1,2 @@
-# processor-post-timeseries
-Timeseries Ingest Post Processor
+# processor-post-viewer-assets
+Viewer Assets Ingest Post Processor

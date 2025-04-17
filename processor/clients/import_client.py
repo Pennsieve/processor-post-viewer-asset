@@ -32,7 +32,7 @@ class ImportClient(BaseClient):
         body = {
             "integration_id": integration_id,
             "package_id": package_id,
-            "import_type": "timeseries",
+            "import_type": "viewerAssets",
             "files": [{"upload_key": str(file.upload_key), "file_path": file.file_path} for file in asset_files],
             "options": [{"viewerType": "parquet-umap-viewer"}]
         }
