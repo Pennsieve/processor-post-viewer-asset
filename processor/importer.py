@@ -31,13 +31,15 @@ def import_viewer_assets(api_host, api2_host, api_key, api_secret, workflow_inst
 
     for root, _, files in os.walk(file_directory):
         for file in files:
+            log.info(file)
             if file == VIEWER_ASSET_CONFIG_FILE:
                 viewer_config_file = os.path.join(root, file)
             else:
                 viewer_asset_files.append(os.path.join(root, file))
 
+    log.info(len(viewer_asset_files))
     if len(viewer_asset_files) == 0 or len(viewer_config_file) == 0:
-        log.info("Incorrect input data")
+        log.error("Incorrect input data")
         return None
 
     # authentication against the Pennsieve API

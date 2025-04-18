@@ -1,1 +1,1 @@
-VIEWER_ASSET_CONFIG_FILE='pennsieve_viewer_config.yaml'
+VIEWER_ASSET_CONFIG_FILE='viewer_config.yml'
